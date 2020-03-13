@@ -16,7 +16,7 @@ namespace TMP_Kurs
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new list_of_topics());
+            Application.Run(new LoginForm());
         }
     }
 }
