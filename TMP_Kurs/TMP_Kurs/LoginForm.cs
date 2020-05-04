@@ -22,7 +22,7 @@ namespace TMP_Kurs
 
         private void CloseButton_Click(object sender, EventArgs e)
         {
-            Application.Exit();
+            this.Close();
         }
 
         private void CloseButton_MouseEnter(object sender, EventArgs e)
@@ -69,24 +69,9 @@ namespace TMP_Kurs
             adapter.Fill(table);
 
             if (table.Rows.Count > 0)
-            {
-                this.Hide();
-                MainForm mainForm = new MainForm();
-                mainForm.Show();
-                Topics.Login = LoginField.Text;
-            }
+                MessageBox.Show("Yes");
             else
                 MessageBox.Show("No");
-
-        }
-
-      
-
-        private void registerLabel_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-            RegisterForm registerForm = new RegisterForm();
-            registerForm.Show();
 
         }
     }
